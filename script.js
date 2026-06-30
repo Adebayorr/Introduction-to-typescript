@@ -12,10 +12,13 @@ const square = (n) => n * n
 const greet = (name) => "Hello, " + name + "!" 
 const multiply = (a, b) => a * b
 
-const getFullName = (firstname, lastname) => `${firstname} ${lastname}`
+const getFullName = (firstName, lastName) => `${firstName} ${lastName}`
 
 console.log(square(4))
 console.log(greet('Harry'))
+console.log(multiply(4, 12));
+console.log(getFullName("Jason", "Statham"))
+
 
 
 // 2. Destructuring
@@ -34,6 +37,7 @@ const userProfile = { username: "coder_ade", email: "ade@example.com" }
 
 const fullStack = [...frontend, ...backend]
 console.log(fullStack);
+
 const newUserProfile = {...userProfile, email: "newemail@example.com"}
 console.log(newUserProfile)
 console.log(userProfile)
@@ -73,7 +77,7 @@ let cartItems = 0
 
 const access = role === "admin" ? "Full Access" :
     role === "editor" ? "Edit Access" :
-    role === "viewer" ? "Read only" : "No Access"
+    role === "viewer" ? "Read Only" : "No Access"
 
 console.log(access);
 
